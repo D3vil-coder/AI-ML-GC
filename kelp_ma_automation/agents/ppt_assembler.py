@@ -158,13 +158,12 @@ class PPTAssembler:
                     img_path = str(fallback)
             
             if img_path:
-                # Place image on right half: 576x384 pixels = 6x4 inch box
-                # Center vertically relative to text block (starts 1.0, ends 5.5 -> center ~3.25)
-                # Image height 4.0 -> start at 1.25 to center? No, visually 1.5 looks better
+                # Place image on right half: 384x256 pixels = 4x2.67 inch box (3:2 ratio)
+                # Position: right side, vertically centered
                 img_pipeline.add_image_to_slide_pixels(
                     slide, img_path,
-                    left_inches=5.0, top_inches=1.5,
-                    width_pixels=576, height_pixels=384
+                    left_inches=5.5, top_inches=2.0,
+                    width_pixels=384, height_pixels=256
                 )
         except Exception as e:
             import logging

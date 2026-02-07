@@ -26,11 +26,24 @@ class ImagePipeline:
             logger.warning(f"Images directory not found: {self.images_dir}")
             return
         
+        # Scan root level images
         for img_file in self.images_dir.glob('*'):
-            if img_file.suffix.lower() in ['.jpg', '.jpeg', '.png']:
-                # Store by normalized filename (lowercase, no extension)
+            if img_file.is_file() and img_file.suffix.lower() in ['.jpg', '.jpeg', '.png']:
                 key = img_file.stem.lower().replace('_', '').replace('-', '')
                 self.image_cache[key] = str(img_file)
+        
+        # Scan subdirectories (domain folders like technology/, logistics/)
+        for subdir in self.images_dir.iterdir():
+            if subdir.is_dir():
+                domain_name = subdir.name.lower()
+                for img_file in subdir.glob('*'):
+                    if img_file.suffix.lower() in ['.jpg', '.jpeg', '.png']:
+                        # Store with domain prefix: "technology_officemoddern"
+                        key = f"{domain_name}_{img_file.stem.lower().replace('_', '').replace('-', '')}"
+                        self.image_cache[key] = str(img_file)
+                        # Also store domain as a general key (first image in folder)
+                        if domain_name not in self.image_cache:
+                            self.image_cache[domain_name] = str(img_file)
         
         logger.info(f"Found {len(self.image_cache)} images in library")
     
@@ -39,43 +52,62 @@ class ImagePipeline:
         Find best matching image for domain and slide.
         
         Args:
-            domain: Domain name (e.g., 'technology', 'manufacturing')
+            domain: Domain name (e.g., 'technology', 'Technology & IT Services')
             slide_num: Slide number (1-3)
         
         Returns:
             Path to image file, or None if not found
         """
-        # Priority search order
-        search_terms = [
-            f"{domain}{slide_num}",  # e.g., "technology1.jpg"
-            f"{domain}main",          # e.g., "technologymain.jpg"
-            f"{domain}hero",
-            domain,                   # General domain image
-        ]
+        # Normalize domain name
+        domain_lower = domain.lower()
         
-        # Domain-specific fallback terms
-        domain_terms = {
-            'technology': ['officemoddern', 'developerscoding', 'serverroom'],
-            'manufacturing': ['factoryfloor', 'machinerymodern', 'warehouse'],
-            'logistics': ['truckfleet', 'warehouseoperations', 'tracking'],
-            'consumer': ['lifestyleproduct', 'retailstore', 'ecommerce'],
-            'healthcare': ['pharmalab', 'researchscientist', 'medical'],
-            'infrastructure': ['constructionsite', 'building', 'urban'],
-            'chemicals': ['chemicalplant', 'labformulation', 'industrial'],
-            'automotive': ['autofactory', 'componentsdisplay', 'assembly']
+        # Map full domain names to folder names
+        domain_map = {
+            'technology & it services': 'technology',
+            'technology': 'technology',
+            'it services': 'technology',
+            'manufacturing': 'manufacturing',
+            'logistics & supply chain': 'logistics',
+            'logistics': 'logistics',
+            'supply chain': 'logistics',
+            'consumer & retail': 'consumer',
+            'consumer': 'consumer',
+            'retail': 'consumer',
+            'healthcare & pharma': 'healthcare',
+            'healthcare': 'healthcare',
+            'pharma': 'healthcare',
+            'infrastructure': 'infrastructure',
+            'chemicals': 'chemicals',
+            'automotive': 'automotive',
         }
         
-        if domain in domain_terms:
-            search_terms.extend(domain_terms[domain])
+        # Get normalized domain folder name
+        folder_name = domain_map.get(domain_lower, domain_lower.split()[0].lower())
         
-        # Search
+        # Check if domain folder exists and has images
+        domain_folder = self.images_dir / folder_name
+        if domain_folder.exists() and domain_folder.is_dir():
+            images = list(domain_folder.glob('*.png')) + list(domain_folder.glob('*.jpg')) + list(domain_folder.glob('*.jpeg'))
+            if images:
+                # Return first image from domain folder
+                selected = str(images[0])
+                logger.info(f"Found domain image: {selected}")
+                return selected
+        
+        # Fallback: search cache
+        search_terms = [
+            folder_name,
+            f"{folder_name}{slide_num}",
+            f"{folder_name}main",
+        ]
+        
         for term in search_terms:
             normalized = term.lower().replace('_', '').replace('-', '')
             if normalized in self.image_cache:
-                logger.info(f"Found image for {domain} slide {slide_num}: {self.image_cache[normalized]}")
+                logger.info(f"Found cached image for {domain}: {self.image_cache[normalized]}")
                 return self.image_cache[normalized]
         
-        logger.warning(f"No image found for domain={domain}, slide={slide_num}")
+        logger.warning(f"No image found for domain={domain} (folder={folder_name})")
         return None
     
     def add_image_to_slide(self, slide, image_path: str, 
