@@ -410,8 +410,10 @@ class ContentWriter:
                 # Use LLM to generate additional points
                 if self.ollama.available:
                     context = f"Company: {self.company_name}\n"
-                    context += f"Products: {', '.join(data.get('products_services', [])[:3])}\n"
-                    context += f"Domain: {data.get('industries_served', ['Technology'])[0]}\n"
+                    products = data.get('products_services', [])
+                    context += f"Products: {', '.join(products[:3]) if products else 'N/A'}\n"
+                    industries = data.get('industries_served', [])
+                    context += f"Domain: {industries[0] if industries else 'Technology'}\n"
                     
                     prompt = f"""For an M&A investment teaser, generate 3 bullet points for "{section_name}".
 Company context: {context}
