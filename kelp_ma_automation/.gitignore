@@ -1,0 +1,60 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Data and outputs
+data/output/*
+!data/output/.gitkeep
+data/input/*.md
+!data/input/sample-company.md
+
+# API keys and secrets
+.env
+*.key
+*_key.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Playwright
+playwright/.local-browsers/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/

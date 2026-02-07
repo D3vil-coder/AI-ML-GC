@@ -1,0 +1,162 @@
+{
+  "summary": {
+    "run_id": "20260205_005224",
+    "total_calls": 16,
+    "total_tokens": 1106,
+    "prompt_tokens": 887,
+    "completion_tokens": 219,
+    "estimated_cost_usd": 0.0001106,
+    "by_task": {
+      "text_shortening:overview": {
+        "calls": 1,
+        "tokens": 244
+      },
+      "text_shortening:name": {
+        "calls": 3,
+        "tokens": 113
+      },
+      "text_shortening:strength": {
+        "calls": 5,
+        "tokens": 312
+      },
+      "text_shortening:opportunity": {
+        "calls": 4,
+        "tokens": 242
+      },
+      "text_shortening:milestone": {
+        "calls": 3,
+        "tokens": 195
+      }
+    }
+  },
+  "detailed_log": [
+    {
+      "task": "text_shortening:overview",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 181,
+      "completion_tokens": 63,
+      "total_tokens": 244,
+      "timestamp": "2026-02-05T00:52:47.214223"
+    },
+    {
+      "task": "text_shortening:name",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 35,
+      "completion_tokens": 3,
+      "total_tokens": 38,
+      "timestamp": "2026-02-05T00:52:47.456823"
+    },
+    {
+      "task": "text_shortening:name",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 35,
+      "completion_tokens": 3,
+      "total_tokens": 38,
+      "timestamp": "2026-02-05T00:52:47.705466"
+    },
+    {
+      "task": "text_shortening:name",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 35,
+      "completion_tokens": 2,
+      "total_tokens": 37,
+      "timestamp": "2026-02-05T00:52:47.964748"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 53,
+      "completion_tokens": 14,
+      "total_tokens": 67,
+      "timestamp": "2026-02-05T00:52:48.737473"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 50,
+      "completion_tokens": 11,
+      "total_tokens": 61,
+      "timestamp": "2026-02-05T00:52:49.488434"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 48,
+      "completion_tokens": 9,
+      "total_tokens": 57,
+      "timestamp": "2026-02-05T00:52:50.073458"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 53,
+      "completion_tokens": 16,
+      "total_tokens": 69,
+      "timestamp": "2026-02-05T00:52:50.555446"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 48,
+      "completion_tokens": 10,
+      "total_tokens": 58,
+      "timestamp": "2026-02-05T00:52:51.127487"
+    },
+    {
+      "task": "text_shortening:opportunity",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 47,
+      "completion_tokens": 13,
+      "total_tokens": 60,
+      "timestamp": "2026-02-05T00:52:51.764691"
+    },
+    {
+      "task": "text_shortening:opportunity",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 52,
+      "completion_tokens": 12,
+      "total_tokens": 64,
+      "timestamp": "2026-02-05T00:52:52.148445"
+    },
+    {
+      "task": "text_shortening:opportunity",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 52,
+      "completion_tokens": 11,
+      "total_tokens": 63,
+      "timestamp": "2026-02-05T00:52:52.689170"
+    },
+    {
+      "task": "text_shortening:opportunity",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 46,
+      "completion_tokens": 9,
+      "total_tokens": 55,
+      "timestamp": "2026-02-05T00:52:53.084336"
+    },
+    {
+      "task": "text_shortening:milestone",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 49,
+      "completion_tokens": 23,
+      "total_tokens": 72,
+      "timestamp": "2026-02-05T00:52:53.805210"
+    },
+    {
+      "task": "text_shortening:milestone",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 51,
+      "completion_tokens": 6,
+      "total_tokens": 57,
+      "timestamp": "2026-02-05T00:52:54.231516"
+    },
+    {
+      "task": "text_shortening:milestone",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 52,
+      "completion_tokens": 14,
+      "total_tokens": 66,
+      "timestamp": "2026-02-05T00:52:54.702213"
+    }
+  ]
+}

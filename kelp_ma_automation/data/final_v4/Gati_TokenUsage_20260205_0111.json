@@ -1,0 +1,134 @@
+{
+  "summary": {
+    "run_id": "20260205_011106",
+    "total_calls": 13,
+    "total_tokens": 1056,
+    "prompt_tokens": 892,
+    "completion_tokens": 164,
+    "estimated_cost_usd": 0.0001056,
+    "by_task": {
+      "text_shortening:overview": {
+        "calls": 1,
+        "tokens": 252
+      },
+      "text_shortening:strength": {
+        "calls": 5,
+        "tokens": 332
+      },
+      "text_shortening:opportunity": {
+        "calls": 4,
+        "tokens": 266
+      },
+      "text_shortening:milestone": {
+        "calls": 3,
+        "tokens": 206
+      }
+    }
+  },
+  "detailed_log": [
+    {
+      "task": "text_shortening:overview",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 190,
+      "completion_tokens": 62,
+      "total_tokens": 252,
+      "timestamp": "2026-02-05T01:11:29.241685"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 61,
+      "completion_tokens": 9,
+      "total_tokens": 70,
+      "timestamp": "2026-02-05T01:11:29.802881"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 59,
+      "completion_tokens": 7,
+      "total_tokens": 66,
+      "timestamp": "2026-02-05T01:11:30.331001"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 56,
+      "completion_tokens": 5,
+      "total_tokens": 61,
+      "timestamp": "2026-02-05T01:11:30.671760"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 61,
+      "completion_tokens": 10,
+      "total_tokens": 71,
+      "timestamp": "2026-02-05T01:11:31.227751"
+    },
+    {
+      "task": "text_shortening:strength",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 56,
+      "completion_tokens": 8,
+      "total_tokens": 64,
+      "timestamp": "2026-02-05T01:11:31.830500"
+    },
+    {
+      "task": "text_shortening:opportunity",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 55,
+      "completion_tokens": 9,
+      "total_tokens": 64,
+      "timestamp": "2026-02-05T01:11:32.486546"
+    },
+    {
+      "task": "text_shortening:opportunity",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 61,
+      "completion_tokens": 5,
+      "total_tokens": 66,
+      "timestamp": "2026-02-05T01:11:32.886391"
+    },
+    {
+      "task": "text_shortening:opportunity",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 61,
+      "completion_tokens": 8,
+      "total_tokens": 69,
+      "timestamp": "2026-02-05T01:11:33.418660"
+    },
+    {
+      "task": "text_shortening:opportunity",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 55,
+      "completion_tokens": 12,
+      "total_tokens": 67,
+      "timestamp": "2026-02-05T01:11:34.007888"
+    },
+    {
+      "task": "text_shortening:milestone",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 57,
+      "completion_tokens": 10,
+      "total_tokens": 67,
+      "timestamp": "2026-02-05T01:11:34.542374"
+    },
+    {
+      "task": "text_shortening:milestone",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 60,
+      "completion_tokens": 6,
+      "total_tokens": 66,
+      "timestamp": "2026-02-05T01:11:34.927609"
+    },
+    {
+      "task": "text_shortening:milestone",
+      "model": "phi4-mini:latest",
+      "prompt_tokens": 60,
+      "completion_tokens": 13,
+      "total_tokens": 73,
+      "timestamp": "2026-02-05T01:11:35.572358"
+    }
+  ]
+}

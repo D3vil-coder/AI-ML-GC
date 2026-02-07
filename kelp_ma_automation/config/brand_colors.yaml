@@ -1,0 +1,59 @@
+# Brand Colors for Kelp M&A
+colors:
+  primary:
+    name: "Dark Indigo"
+    rgb: [75, 0, 130]
+    hex: "#4B0082"
+  
+  secondary:
+    name: "Pink"
+    rgb: [255, 20, 147]
+    hex: "#FF1493"
+  
+  accent:
+    name: "Cyan"
+    rgb: [0, 206, 209]
+    hex: "#00CED1"
+  
+  text_dark:
+    name: "Dark Grey"
+    rgb: [50, 50, 50]
+    hex: "#323232"
+  
+  text_light:
+    name: "White"
+    rgb: [255, 255, 255]
+    hex: "#FFFFFF"
+  
+  background:
+    name: "Clean White"
+    rgb: [255, 255, 255]
+    hex: "#FFFFFF"
+
+# Typography
+fonts:
+  heading:
+    family: "Arial"
+    weight: "Bold"
+    size_range: [20, 24]
+  
+  body:
+    family: "Arial"
+    weight: "Regular"
+    size_range: [10, 12]
+  
+  footer:
+    family: "Arial"
+    weight: "Regular"
+    size: 9
+
+# Footer text (required on every slide)
+footer:
+  text: "Strictly Private & Confidential – Prepared by Kelp M&A Team"
+  position: "bottom_center"
+  size: 9
+
+# Logo placement
+logo:
+  position: "top_left"
+  text: "KELP"  # Use text placeholder if no image

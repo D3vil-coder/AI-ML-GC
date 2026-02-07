@@ -1,0 +1,489 @@
+domains:
+  manufacturing:
+    name: "Manufacturing & Industrials"
+    keywords:
+      - manufacturing
+      - production
+      - plant
+      - facility
+      - industrial
+      - OEM
+      - B2B
+      - fabrication
+      - assembly
+      - machining
+    financial_indicators:
+      - high_capex: true
+      - inventory_heavy: true
+      - long_receivables: true
+      - asset_intensive: true
+    slide_structure:
+      slide_1:
+        title: "Business Profile & Infrastructure"
+        images:
+          - type: hero
+            position: [0.5, 1.0, 9.0, 2.5]
+            category: factory
+          - type: grid
+            count: 3
+            categories: [raw_materials, quality_lab, finished_product]
+        sections:
+          - name: Product Portfolio
+            position: [0.5, 3.7, 2.8, 2.5]
+            format: bullets
+          - name: Manufacturing Footprint
+            position: [3.5, 3.7, 2.8, 2.5]
+            format: bullets
+          - name: Certifications
+            position: [6.5, 3.7, 2.8, 2.5]
+            format: bullets
+        metrics_bar:
+          position: [0.5, 6.7, 9.0, 0.3]
+          metrics: [capacity, utilization, export_pct, customer_count]
+      slide_2:
+        title: "Financial & Operational Performance"
+        charts:
+          - type: revenue_ebitda_trend
+            position: [0.5, 1.2, 4.5, 3.5]
+          - type: margin_donut
+            position: [5.2, 1.2, 2.8, 3.5]
+          - type: working_capital_infographic
+            position: [8.2, 1.2, 1.5, 3.5]
+        kpis:
+          position: [0.5, 5.0, 9.0, 0.4]
+          metrics: [roce, asset_turnover, de_ratio, ocf]
+      slide_3:
+        title: "Investment Highlights"
+        sections:
+          - name: Investment Hooks
+            count: 3
+            format: callouts
+            position: [1.0, 1.5, 8.0, 2.0]
+          - name: Strategic Moats
+            position: [0.5, 3.5, 4.0, 2.5]
+            format: bullets
+          - name: Growth Drivers
+            position: [5.0, 3.5, 4.0, 2.5]
+            format: bullets
+    
+  technology:
+    name: "Technology & IT Services"
+    keywords:
+      - software
+      - SaaS
+      - platform
+      - cloud
+      - digital
+      - AI/ML
+      - development
+      - consulting
+      - integration
+      - IT services
+    financial_indicators:
+      - asset_light: true
+      - high_margins: true
+      - recurring_revenue: true
+      - people_intensive: true
+    slide_structure:
+      slide_1:
+        title: "Technology Stack & Market Presence"
+        images:
+          - type: hero
+            position: [0.5, 1.0, 9.0, 2.2]
+            category: office
+          - type: icons_grid
+            position: [0.5, 3.5, 4.0, 1.5]
+            category: tech_stack
+        sections:
+          - name: Service Offerings
+            position: [0.5, 5.2, 4.0, 1.5]
+            format: bullets
+          - name: Industry Verticals
+            position: [5.0, 3.5, 4.0, 1.5]
+            format: bullets
+          - name: Partnerships
+            position: [5.0, 5.2, 4.0, 1.5]
+            format: bullets
+      slide_2:
+        title: "Growth & Unit Economics"
+        charts:
+          - type: revenue_growth_trajectory
+            position: [0.5, 1.2, 4.5, 3.0]
+          - type: profitability_metrics
+            position: [5.2, 1.2, 4.0, 3.0]
+        kpis:
+          position: [0.5, 4.5, 9.0, 1.5]
+          layout: grid
+          metrics: [employee_count, revenue_per_employee, client_retention, avg_project_value]
+      slide_3:
+        title: "Investment Highlights"
+        sections:
+          - name: Scalability Thesis
+            position: [0.5, 1.5, 4.0, 1.8]
+            format: bullets
+          - name: Market Opportunity
+            position: [5.0, 1.5, 4.0, 1.8]
+            format: bullets
+          - name: Competitive Positioning
+            position: [0.5, 3.8, 9.0, 2.5]
+            format: bullets
+    
+  logistics:
+    name: "Logistics & Supply Chain"
+    keywords:
+      - logistics
+      - supply chain
+      - warehousing
+      - transportation
+      - distribution
+      - freight
+      - 3PL
+      - last mile
+      - express
+    financial_indicators:
+      - asset_heavy: true
+      - volume_driven: true
+      - thin_margins: true
+      - working_capital_intensive: true
+    slide_structure:
+      slide_1:
+        title: "Network & Infrastructure"
+        images:
+          - type: hero
+            position: [0.5, 1.0, 5.0, 2.5]
+            category: warehouse
+          - type: fleet
+            position: [5.8, 1.0, 3.5, 2.5]
+            category: trucks
+        sections:
+          - name: Service Portfolio
+            position: [0.5, 3.7, 3.0, 2.5]
+            format: bullets
+          - name: Infrastructure Assets
+            position: [3.8, 3.7, 2.8, 2.5]
+            format: bullets
+          - name: Technology Integration
+            position: [6.8, 3.7, 2.5, 2.5]
+            format: bullets
+      slide_2:
+        title: "Operational Metrics & Financials"
+        charts:
+          - type: volume_revenue_growth
+            position: [0.5, 1.2, 4.5, 3.0]
+          - type: efficiency_metrics
+            position: [5.2, 1.2, 4.0, 3.0]
+        sustainability_section:
+          position: [0.5, 4.5, 9.0, 1.8]
+          metrics: [co2_saved, ev_adoption, green_certs]
+      slide_3:
+        title: "Investment Case"
+        sections:
+          - name: Operational Excellence
+            position: [0.5, 1.5, 4.0, 2.0]
+          - name: Growth Vectors
+            position: [5.0, 1.5, 4.0, 2.0]
+          - name: Asset Base
+            position: [0.5, 3.8, 9.0, 2.5]
+  
+  consumer:
+    name: "Consumer Brands (D2C/B2C)"
+    keywords:
+      - brand
+      - consumer
+      - D2C
+      - e-commerce
+      - retail
+      - wellness
+      - FMCG
+      - marketplace
+      - lifestyle
+    financial_indicators:
+      - high_growth: true
+      - marketing_intensive: true
+      - gross_margin_strong: true
+      - cash_burn_risk: true
+    slide_structure:
+      slide_1:
+        title: "Brand & Product Portfolio"
+        images:
+          - type: products
+            position: [0.5, 1.0, 4.0, 2.5]
+            category: product_lifestyle
+          - type: channels
+            position: [4.8, 1.0, 4.5, 1.2]
+            category: marketplace_logos
+        sections:
+          - name: Product Categories
+            position: [0.5, 3.7, 4.0, 2.5]
+          - name: Channel Distribution
+            position: [4.8, 2.5, 4.5, 1.5]
+          - name: Certifications
+            position: [4.8, 4.2, 4.5, 2.0]
+      slide_2:
+        title: "Growth Metrics & Unit Economics"
+        charts:
+          - type: sales_growth
+            position: [0.5, 1.2, 4.0, 2.8]
+          - type: customer_metrics
+            position: [4.8, 1.2, 4.5, 2.8]
+        channel_mix:
+          position: [0.5, 4.3, 9.0, 2.0]
+          format: stacked_bar
+      slide_3:
+        title: "Brand Equity & Investment Case"
+        sections:
+          - name: Market Position
+            position: [0.5, 1.5, 4.0, 1.8]
+          - name: Profitability
+            position: [5.0, 1.5, 4.0, 1.8]
+          - name: Growth Opportunity
+            position: [0.5, 3.8, 9.0, 2.5]
+  
+  healthcare:
+    name: "Healthcare & Pharma"
+    keywords:
+      - pharma
+      - pharmaceutical
+      - healthcare
+      - medical
+      - biotech
+      - diagnostics
+      - hospital
+      - therapeutic
+      - formulation
+    financial_indicators:
+      - regulated: true
+      - rd_intensive: true
+      - ip_driven: true
+      - long_gestation: true
+    slide_structure:
+      slide_1:
+        title: "Product Portfolio & Capabilities"
+        images:
+          - type: rd_facility
+            position: [0.5, 1.0, 4.5, 2.5]
+            category: laboratory
+          - type: certifications
+            position: [5.2, 1.0, 4.0, 1.2]
+            category: regulatory_badges
+        sections:
+          - name: Therapeutic Areas
+            position: [0.5, 3.7, 4.0, 2.5]
+          - name: Manufacturing
+            position: [4.8, 2.5, 4.5, 1.8]
+          - name: Regulatory Approvals
+            position: [4.8, 4.5, 4.5, 1.7]
+      slide_2:
+        title: "Financials & Market Position"
+        charts:
+          - type: revenue_margin_trend
+            position: [0.5, 1.2, 4.5, 2.8]
+          - type: rd_investment
+            position: [5.2, 1.2, 4.0, 2.8]
+        market_metrics:
+          position: [0.5, 4.3, 9.0, 2.0]
+      slide_3:
+        title: "Investment Highlights"
+        sections:
+          - name: Regulatory Moat
+            position: [0.5, 1.5, 4.0, 2.0]
+          - name: Growth Drivers
+            position: [5.0, 1.5, 4.0, 2.0]
+          - name: IP & Pipeline
+            position: [0.5, 3.8, 9.0, 2.5]
+  
+  infrastructure:
+    name: "Infrastructure & Real Estate"
+    keywords:
+      - construction
+      - infrastructure
+      - real estate
+      - developer
+      - EPC
+      - project
+      - contractor
+      - builder
+    financial_indicators:
+      - project_based: true
+      - working_capital_heavy: true
+      - execution_risk: true
+      - lumpy_revenues: true
+    slide_structure:
+      slide_1:
+        title: "Project Portfolio & Execution"
+        images:
+          - type: projects
+            position: [0.5, 1.0, 9.0, 2.8]
+            category: construction
+        sections:
+          - name: Project Types
+            position: [0.5, 4.0, 3.0, 2.3]
+          - name: Geographies
+            position: [3.8, 4.0, 2.7, 2.3]
+          - name: Client Segments
+            position: [6.8, 4.0, 2.5, 2.3]
+      slide_2:
+        title: "Financials & Order Book"
+        charts:
+          - type: revenue_recognition
+            position: [0.5, 1.2, 4.5, 2.8]
+          - type: order_book_pipeline
+            position: [5.2, 1.2, 4.0, 2.8]
+        metrics:
+          position: [0.5, 4.3, 9.0, 2.0]
+      slide_3:
+        title: "Investment Case"
+        sections:
+          - name: Execution Track Record
+            position: [0.5, 1.5, 9.0, 1.8]
+          - name: Strategic Relationships
+            position: [0.5, 3.5, 4.0, 2.5]
+          - name: Growth Pipeline
+            position: [5.0, 3.5, 4.0, 2.5]
+  
+  chemicals:
+    name: "Chemicals & Specialty Materials"
+    keywords:
+      - chemical
+      - polymer
+      - resin
+      - specialty
+      - formulation
+      - additive
+      - coating
+      - petrochemical
+    financial_indicators:
+      - capex_intensive: true
+      - commodity_exposure: true
+      - technical_expertise: true
+      - cyclical: true
+    slide_structure:
+      slide_1:
+        title: "Product Portfolio & Applications"
+        images:
+          - type: facility
+            position: [0.5, 1.0, 4.5, 2.5]
+            category: chemical_plant
+          - type: applications
+            position: [5.2, 1.0, 4.0, 2.5]
+            category: product_applications
+        sections:
+          - name: Product Segments
+            position: [0.5, 3.7, 3.0, 2.5]
+          - name: End-User Industries
+            position: [3.8, 3.7, 2.7, 2.5]
+          - name: Certifications
+            position: [6.8, 3.7, 2.5, 2.5]
+      slide_2:
+        title: "Financial Performance"
+        charts:
+          - type: revenue_by_segment
+            position: [0.5, 1.2, 4.5, 2.8]
+          - type: margin_capacity
+            position: [5.2, 1.2, 4.0, 2.8]
+        metrics:
+          position: [0.5, 4.3, 9.0, 2.0]
+      slide_3:
+        title: "Investment Thesis"
+        sections:
+          - name: Product Differentiation
+            position: [0.5, 1.5, 4.0, 2.0]
+          - name: Entry Barriers
+            position: [5.0, 1.5, 4.0, 2.0]
+          - name: Growth Catalysts
+            position: [0.5, 3.8, 9.0, 2.5]
+  
+  automotive:
+    name: "Automotive & Components"
+    keywords:
+      - automotive
+      - auto components
+      - forging
+      - casting
+      - OEM
+      - tier-1
+      - aftermarket
+      - vehicle
+    financial_indicators:
+      - oem_dependent: true
+      - capex_intensive: true
+      - quality_critical: true
+      - volume_sensitive: true
+    slide_structure:
+      slide_1:
+        title: "Product Range & Customer Base"
+        images:
+          - type: manufacturing
+            position: [0.5, 1.0, 4.5, 2.5]
+            category: auto_manufacturing
+          - type: products
+            position: [5.2, 1.0, 4.0, 2.5]
+            category: auto_components
+        sections:
+          - name: Product Categories
+            position: [0.5, 3.7, 4.0, 2.5]
+          - name: OEM Relationships
+            position: [4.8, 3.7, 4.5, 2.5]
+      slide_2:
+        title: "Operational & Financial Metrics"
+        charts:
+          - type: revenue_volume_growth
+            position: [0.5, 1.2, 4.5, 2.8]
+          - type: capacity_margin
+            position: [5.2, 1.2, 4.0, 2.8]
+        metrics:
+          position: [0.5, 4.3, 9.0, 2.0]
+      slide_3:
+        title: "Investment Case"
+        sections:
+          - name: OEM Relationships
+            position: [0.5, 1.5, 4.0, 2.0]
+          - name: Technological Capabilities
+            position: [5.0, 1.5, 4.0, 2.0]
+          - name: Growth Outlook
+            position: [0.5, 3.8, 9.0, 2.5]
+
+# Data extraction mappings
+data_extraction:
+  financial_metrics:
+    revenue: "Revenue From Operations"
+    ebitda: "Operating EBITDA"
+    pat_margin: "PAT Margin"
+    roce: "RoCE"
+    roe: "ROE"
+    asset_turnover: "Asset Turnover"
+  
+  balance_sheet:
+    total_assets: "Total Assets"
+    equity: "Total Equity"
+    borrowings: "Borrowings"
+    current_assets: "Adj Current Assets"
+    current_liabilities: "Adj Current Liabilities"
+  
+  operational:
+    employees: "Employee count"
+    facilities: "Manufacturing facilities"
+    customers: "Customer count"
+    export_pct: "Export contribution"
+
+# Chart styling
+chart_styles:
+  revenue_ebitda_trend:
+    figsize: [12, 6]
+    dpi: 300
+    bar_color: primary
+    line_color: accent
+    grid: true
+    show_cagr: true
+  
+  margin_donut:
+    figsize: [8, 8]
+    dpi: 300
+    hole_size: 0.70
+    colors: [primary, secondary, accent]
+  
+  working_capital_infographic:
+    figsize: [10, 3]
+    dpi: 300
+    box_style: round
+    colors: [primary, secondary, accent, highlight]
