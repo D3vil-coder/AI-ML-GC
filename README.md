@@ -91,7 +91,7 @@ The KELP M&A Automation Pipeline is an end-to-end system that transforms company
           │ Citation Verifier (Agent 5)│
           └─────────────┬──────────────┘
           ┌─────────────▼──────────────┐
-          │ Image Pipeline (Agent 5)│
+          │ Image Pipeline (Agent 6)   │
           └─────────────┬──────────────┘
                         │
           ┌─────────────▼──────────────┐
